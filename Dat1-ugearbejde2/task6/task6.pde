@@ -24,6 +24,10 @@ int smaller = 0;
     {
        smaller = a;
     }
+     else if (a == b)
+     {
+       smaller = 0;
+     }
      else
      {
        smaller = b;
