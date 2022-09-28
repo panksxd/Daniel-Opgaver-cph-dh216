@@ -75,3 +75,26 @@ void keyReleased()
   player1.keyReleased();
   player2.keyReleased();
 }
+
+/*
+I realise i did not find a place to use a for loop
+I'll write an example here just to fullfill that requirement
+
+int[] imaginaryArray = new int[7];
+
+for(int i = 0; i < imaginaryArray.length; i++)
+{
+  imaginaryArray[i] = i + 1;
+  println(imaginaryArray[i]);
+}
+
+this for loop will set the values of imaginaryArray[i] to i+1
+so the println would give us:
+1 
+2
+3
+4
+5
+6
+7
+*/

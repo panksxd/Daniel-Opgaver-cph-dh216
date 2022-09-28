@@ -5,6 +5,8 @@ class Ball
   float x;
   float y;
   int r;
+  
+  //The array speeds was made so i could get random numbers without the possibility to go below 1 or above -1 but still have numbers on either side of them.
   float[] speeds = {-3, -2.5, -2, -1.5, -1, 1, 1.5, 2, 2.5, 3};
   float xDirection = speeds[(int)random(6, 10)];
   float yDirection =  speeds[(int)random(2, 8)];
