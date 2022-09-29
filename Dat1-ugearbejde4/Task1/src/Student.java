@@ -17,6 +17,6 @@ public class Student
 
     public String toString()
     {
-       return "Student: "+name + "is involved with the following courses: "+ courses;
+       return "Student: "+name + " is involved with the following courses: "+ courses;
     }
 }
