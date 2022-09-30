@@ -5,14 +5,14 @@ import java.util.ArrayList;
 
 public class Cafe
 {
-    public ArrayList<String> coffeeMenu;
+    public ArrayList<String> coffeeMenu = new ArrayList<>();
 
 
 
 
 
 
-    String loadMenuData()
+    void loadMenuData()
     {
         File file = new File("coffees.txt");
 
