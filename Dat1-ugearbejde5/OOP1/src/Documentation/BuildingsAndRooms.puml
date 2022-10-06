@@ -1,0 +1,22 @@
+@startuml
+!pragma layout smetana
+
+Main *-- Building
+Main *-- Room
+Main : + ArrayList<Room> rooms
+Main : + Room r1
+Main : + Room r2
+Main : + Room r3
+Main : + Building b1
+Main : + static count(Building b1)
+Main : + static String isNormal(Building b1)
+
+Building : - ArrayList<Room> rooms
+Building : - int numberOfBathrooms
+Building : - int numberOfFloors
+Building : - boolean isOfficeBuilding
+
+Room : - int numberOfDoors
+Room : - int numberOfWindows
+Room : - int numberOfLamps
+@enduml
