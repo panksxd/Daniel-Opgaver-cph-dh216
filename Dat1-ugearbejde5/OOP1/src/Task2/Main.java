@@ -17,26 +17,29 @@ public class Main
         Building b1 = new Building(rooms, 1, 1, false);
         count(b1);
         System.out.println(isNormal(b1));
-
+        if(isNormal(b1))
+        {
+            System.out.println("this is a normal building.");
+        }
+        else
+        {
+            System.out.println("this building is weird.");
+        }
     }
     static int count(Building b1)
     {
         int lampsTotal = 0;
-        for(int i = 0; i < b1.getRooms().size(); i++)
+        for(Room r : b1.getRooms())
         {
-
-            lampsTotal += b1.getRooms().get(i).getNumberOfLamps();
-
+            lampsTotal += r.getNumberOfLamps();
         }
+
         System.out.println(lampsTotal);
         return lampsTotal;
     }
-    static String isNormal(Building b1)
+    static boolean isNormal(Building b1)
     {
-        if(b1.getNumberOfFloors()< b1.getRooms().size())
-        {
-            return "This is a normal building";
-        }
-        return "This is an odd building";
+        return b1.getNumberOfFloors()< b1.getRooms().size();
+
     }
 }
