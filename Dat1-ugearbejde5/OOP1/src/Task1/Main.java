@@ -13,4 +13,10 @@ public class Main
         c2.setDriver(d1);
         System.out.println(c2.toString() + d1.toString());
     }
+
+    @Override
+    public String toString()
+    {
+        return "this is main";
+    }
 }
